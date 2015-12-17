@@ -1,13 +1,14 @@
 /*
-Theme Name:         IDIES Root Theme
-Theme URI:          http://idies.jhu.edu
-Description:        IDIES Root Theme, based on the Roots WordPress starter theme 
-					using HTML5 Boilerplate & Bootstrap. Also uses LESS and Grunt
-					to compile and minimize CSS and JavaScript.
-					Version:            7.0.3.1
+Theme Name:         EScience 2016 WordPress Theme
+Theme URI:          http://escience-2016/idies.jhu.edu
+Description:        Escience Theme
+					Originally based on the Roots WordPress starter theme.
+					Uses HTML5 Boilerplate & Bootstrap. 
+					Uses NPM with Grunt to compile LESS to CSS and minimize JavaScript.
+					EScience WP Theme Version 1.0
 Author:             Bonnie Souter
 Author URI:         http://idies.jhu.edu
-GIT:				https://bitbucket.org/idies/roots_idies
+GIT:				https://github.com/idies/escience-2016-wp-theme
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
