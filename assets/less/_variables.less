@@ -8,10 +8,53 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #27ae60;
-
+@brand-primary:         #1E138A;
+@brand-warning:			#C6AF00;
+@brand-danger:			#C60000;
+@brand-info:			#7BB900;
+@brand-success:			#007777;
+@brand-primary-light: lighten( @brand-primary , 25% );
+@brand-primary-lighter: lighten( @brand-primary , 50% );
+@brand-primary-lightest: lighten( @brand-primary , 75% );
 
 // Glyphicons path
 // -------------------------
 
 @icon-font-path:        "../vendor/bootstrap/fonts/";
+
+// SPLASH AND LOGO
+body {
+	header div.splash {
+		min-height: 160px;
+		width:100%;
+		background-image: url('../img/Baltimorepano.jpg');
+		background-repeat:no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		div.logo img{
+			max-height:180px;
+		}
+	}
+	&.home header div.splash {
+		min-height: 320px;
+	}
+}
+section.widget ul.menu {
+	.nav;
+	.nav-pills;
+	.nav-stacked;
+	>li>ul.sub-menu{
+		.nav;
+		.nav-pills;
+		.nav-stacked;
+		padding-left: 20px;
+		font-size:0.9em;
+		font-weight:bold;
+		> li.active > a, 
+		> li.active > a:hover
+		> li.active > a:focus {
+			background-color: 	@brand-primary-lighter ;
+			color: 				@gray-dark;
+		}
+	}
+}
