@@ -1,6 +1,6 @@
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container-fluid splash">  
-  <div class="container-fluid logo"> <img class="alignright" src="<?php echo get_template_directory_uri() . "/assets/img/escience-12-logo.png"; ?>" />
+  <div class="container-fluid logo"> <img class="alignright" src="<?php echo get_template_directory_uri() . "/assets/img/escience_logo_2106_hdr.png"; ?>" />
   </div>
   </div>
   <div class="container">

@@ -13,11 +13,14 @@
 @brand-danger:			#C60000;
 @brand-info:			#7BB900;
 @brand-success:			#007777;
+@brand-primary-dark: darken( @brand-primary , 25% );
+@brand-primary-darker: darken( @brand-primary , 50% );
+@brand-primary-darkest: darken( @brand-primary , 55% );
 @brand-primary-light: lighten( @brand-primary , 25% );
 @brand-primary-lighter: lighten( @brand-primary , 50% );
-@brand-primary-lightest: lighten( @brand-primary , 75% );
+@brand-primary-lightest: lighten( @brand-primary ,60% );
 
-// Glyphicons path
+// Font paths
 // -------------------------
 
 @icon-font-path:        "../vendor/bootstrap/fonts/";
@@ -39,22 +42,95 @@ body {
 		min-height: 320px;
 	}
 }
-section.widget ul.menu {
-	.nav;
-	.nav-pills;
-	.nav-stacked;
-	>li>ul.sub-menu{
-		.nav;
-		.nav-pills;
-		.nav-stacked;
-		padding-left: 20px;
-		font-size:0.9em;
-		font-weight:bold;
-		> li.active > a, 
-		> li.active > a:hover
-		> li.active > a:focus {
-			background-color: 	@brand-primary-lighter ;
-			color: 				@gray-dark;
+// SIDEBAR
+aside.sidebar {
+
+// WIDGETS
+	section.widget {
+		
+		padding-top: 10px;
+		border-bottom-color: @brand-primary-dark;
+		border-bottom-style: solid;
+		border-bottom-width: thin;
+		padding-bottom: 10px;
+	
+// MENU AND SUBMENU
+		ul.menu {
+			.nav;
+			.nav-pills;
+			.nav-stacked;
+			>li>ul.sub-menu{
+				.nav;
+				.nav-pills;
+				.nav-stacked;
+				padding-left: 20px;
+				font-size:0.9em;
+				font-weight:bold;
+				> li.active > a, 
+				> li.active > a:hover
+				> li.active > a:focus {
+					background-color: 	@brand-primary-lightest ;
+					color: 				@gray-dark;
+				}
+			}
+		}
+
+// Supportedby
+		div.supportedby {
+			
+			h3 {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.3em;
+				color: #666;
+			}
+			h4 {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.3em;
+				color: #666;
+			}
+			p, ul, dl {
+				li, dt {
+					font-size: 1.1em;
+					list-style-type: none;
+					padding-top: 5px;
+					a {
+						font-weight: bold;
+						text-decoration: none;
+					}
+					a:hover, a:focus, a:active {
+						color: @brand-primary-light;
+					}
+				}
+			}
+		}
+		
+		div.connect {
+			dl.dl-horizontal {
+				>dt {
+					>img {
+						max-height: 16px;
+					}
+					i {
+						color: #333;
+					}
+				}
+			}
 		}
 	}
 }
+
+// MEDIA
+@media (min-width: @screen-sm-min) {
+	div.connect {
+		dl.dl-horizontal {
+			>dt {
+				width: 20px;
+			}
+			dd {
+				margin-left:40px;
+			}
+		}
+	}
+}   
