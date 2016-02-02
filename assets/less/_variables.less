@@ -1,3 +1,4 @@
+// -------------------------
 // Grid settings
 // -------------------------
 
@@ -25,7 +26,9 @@
 
 @icon-font-path:        "../vendor/bootstrap/fonts/";
 
+// -------------------------
 // SPLASH AND LOGO
+// -------------------------
 body {
 	header div.splash {
 		min-height: 160px;
@@ -42,10 +45,12 @@ body {
 		min-height: 320px;
 	}
 }
+// -------------------------
 // SIDEBAR
+// -------------------------
 aside.sidebar {
 
-// WIDGETS
+//  WIDGETS
 	section.widget {
 		
 		padding-top: 10px;
@@ -53,8 +58,11 @@ aside.sidebar {
 		border-bottom-style: solid;
 		border-bottom-width: thin;
 		padding-bottom: 10px;
-	
-// MENU AND SUBMENU
+
+		&:last-child {
+			border-bottom: 0;
+		}	
+//  MENU AND SUBMENU
 		ul.menu {
 			.nav;
 			.nav-pills;
@@ -121,7 +129,56 @@ aside.sidebar {
 	}
 }
 
-// MEDIA
+// -------------------------
+// NAVBAR-HEADER
+// -------------------------
+header div.navbar-header {
+	float: initial;
+	div.bookmark.navmenu {
+		.visible-xs-inline-block;
+		box-sizing: border-box;
+		float:right;
+		padding:10px;
+		a {
+			color: #777777;
+			text-decoration: none;
+			background-color: transparent;
+		}
+	}
+}
+
+// -------------------------
+// FOOTER
+// -------------------------
+body>footer {
+    background-color: #1e138a;
+    color: #ffffff;
+	a, a:hover, a:active, a:focus {
+		color: #ffffff;
+		text-decoration:none;
+	}
+	padding:20px;
+	div.copyright{
+		font-weight:bold;
+		font-size:1.1em;
+		float:left;
+	}
+	div.social{
+		float:right;
+		ul{
+			list-style-type: none;
+			li {
+				display:inline-block;
+				padding-left:10px;
+				padding-right:10px;
+			}
+		}
+	}
+}
+
+// -------------------------
+// MEDIA Queries
+// -------------------------
 @media (min-width: @screen-sm-min) {
 	div.connect {
 		dl.dl-horizontal {

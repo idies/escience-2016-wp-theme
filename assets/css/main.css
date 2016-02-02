@@ -6650,6 +6650,9 @@ aside.sidebar section.widget {
   border-bottom-width: thin;
   padding-bottom: 10px;
 }
+aside.sidebar section.widget:last-child {
+  border-bottom: 0;
+}
 aside.sidebar section.widget ul.menu {
   margin-bottom: 0;
   padding-left: 0;
@@ -6846,6 +6849,54 @@ aside.sidebar section.widget div.connect dl.dl-horizontal > dt > img {
 }
 aside.sidebar section.widget div.connect dl.dl-horizontal > dt i {
   color: #333;
+}
+header div.navbar-header {
+  float: initial;
+}
+header div.navbar-header div.bookmark.navmenu {
+  display: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: right;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  header div.navbar-header div.bookmark.navmenu {
+    display: inline-block !important;
+  }
+}
+header div.navbar-header div.bookmark.navmenu a {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+}
+body > footer {
+  background-color: #1e138a;
+  color: #ffffff;
+  padding: 20px;
+}
+body > footer a,
+body > footer a:hover,
+body > footer a:active,
+body > footer a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+body > footer div.copyright {
+  font-weight: bold;
+  font-size: 1.1em;
+  float: left;
+}
+body > footer div.social {
+  float: right;
+}
+body > footer div.social ul {
+  list-style-type: none;
+}
+body > footer div.social ul li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   div.connect dl.dl-horizontal > dt {
