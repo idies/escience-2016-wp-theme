@@ -1,0 +1,198 @@
+// Escience Theme Style Overrides
+
+// -------------------------
+// SPLASH AND LOGO
+// -------------------------
+body {
+	header div.splash {
+		min-height: 160px;
+		width:100%;
+		background-image: url('../img/Baltimorepano.jpg');
+		background-repeat:no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		div.logo img{
+			max-height:180px;
+		}
+	}
+	&.home header div.splash {
+		min-height: 320px;
+	}
+}
+// -------------------------
+// SIDEBAR
+// -------------------------
+aside.sidebar {
+
+//  WIDGETS
+	section.widget {
+		
+		padding-top: 10px;
+		border-bottom-color: @brand-primary-dark;
+		border-bottom-style: solid;
+		border-bottom-width: thin;
+		padding-bottom: 10px;
+
+		&:last-child {
+			border-bottom: 0;
+		}	
+//  WIDGET NAV MENU WITH DROPDOWNS
+/*
+		&.widget_nav_menu {
+			ul.menu {
+				.btn-group-vertical;
+				list-style: none;
+				li>a {
+					.btn;
+					.btn-primary;
+					ul {
+						.btn;
+						.btn-default;
+						//.dropdown-toggle;
+					}
+				}				
+			}
+		}
+*/
+//  WIDGET SIDE MENU AND SUBMENU
+		ul.menu {
+			.nav;
+			.nav-pills;
+			.nav-stacked;
+			>li>ul.sub-menu{
+				.nav;
+				.nav-pills;
+				.nav-stacked;
+				padding-left: 20px;
+				font-size:0.9em;
+				font-weight:bold;
+				> li.active > a, 
+				> li.active > a:hover
+				> li.active > a:focus {
+					background-color: 	@brand-primary-lightest ;
+					color: 				@gray-dark;
+				}
+			}
+		}
+// Supportedby
+		div.supportedby {
+			
+			h3 {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.3em;
+				color: #666;
+			}
+			h4 {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.3em;
+				color: #666;
+			}
+			p, ul, dl {
+				li, dt {
+					font-size: 1.1em;
+					list-style-type: none;
+					padding-top: 5px;
+					a {
+						font-weight: bold;
+						text-decoration: none;
+					}
+					a:hover, a:focus, a:active {
+						color: @brand-primary-light;
+					}
+				}
+			}
+		}
+		
+		div.connect {
+			dl.dl-horizontal {
+				>dt {
+					>img {
+						max-height: 16px;
+					}
+					i {
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+}
+
+// -------------------------
+// NAVBAR-HEADER
+// -------------------------
+header {
+	&.navbar {
+		margin-bottom: 		0;
+	}
+	div.navbar-header {
+		float: initial;
+		div.bookmark.navmenu {
+			.visible-xs-inline-block;
+			box-sizing: border-box;
+			float:right;
+			padding:10px;
+			a {
+				color: #777777;
+				text-decoration: none;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+// -------------------------
+// FOOTER
+// -------------------------
+body>footer {
+    background-color: #1e138a;
+    color: #ffffff;
+	a, a:hover, a:active, a:focus {
+		color: #ffffff;
+		text-decoration:none;
+	}
+	padding:20px;
+	div.copyright{
+		font-weight:bold;
+		font-size:1.1em;
+		float:left;
+	}
+	div.social{
+		float:right;
+		ul{
+			list-style-type: none;
+			li {
+				display:inline-block;
+				padding-left:10px;
+				padding-right:10px;
+			}
+		}
+	}
+}
+
+// -------------------------
+// MAIN BODY
+// -------------------------
+main.main {
+	.page-header {
+		margin: 20px 0 10px;
+	}
+}
+
+// -------------------------
+// MEDIA Queries
+// -------------------------
+@media (min-width: @screen-sm-min) {
+	div.connect {
+		dl.dl-horizontal {
+			>dt {
+				width: 20px;
+			}
+			dd {
+				margin-left:40px;
+			}
+		}
+	}
+}   

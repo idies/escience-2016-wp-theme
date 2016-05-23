@@ -37,3 +37,42 @@ function escience_filter_wp_title( $title, $sep ) {
  
 }
 add_filter( 'wp_title', 'escience_filter_wp_title', 10, 2 ); 
+/**
+ * Creates a side menu as a vertical button group with dropdowns.
+ *
+ * @param string $content Default content text
+ * @param string $nav_menu 
+ * @param string $args 
+ * @param string $instance 
+ * @return string Filtered title.
+ */
+function escience_filter_custom_menu( $content, $nav_menu, $args, $instance ) {
+ 
+	//idies_debug( $args );
+	return $content;
+ 
+}
+add_filter( 'widget_nav_menu_args', 'escience_filter_custom_menu', 10, 4 ); 
+
+
+/*
+ * Print Debug values.
+ */
+function idies_debug( $var ) {
+	if ( WP_DEBUG ) :
+	
+		echo "<PRE>";
+		
+		if (is_array($var)) :
+			print_r($var);
+		elseif (is_object($var)) :
+			var_dump($var);
+		else :
+			print($var);
+		endif;
+		
+		echo "</PRE>";
+		
+	endif;
+	return;
+}

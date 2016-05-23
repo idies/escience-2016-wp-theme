@@ -6628,6 +6628,71 @@ aside.sidebar section.widget ul.menu > li > ul.sub-menu:after,
     display: none !important;
   }
 }
+.comment-list ol {
+  list-style: none;
+}
+.gallery-row {
+  padding: 10px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 10px auto;
+}
+.alignleft,
+.alignright {
+  margin-bottom: 10px;
+}
+figure.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .alignleft {
+    float: left;
+    margin-right: 10px;
+  }
+  .alignright {
+    float: right;
+    margin-left: 10px;
+  }
+}
+.main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .main {
+    float: left;
+    width: 100%;
+  }
+}
+.sidebar-primary .main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .sidebar-primary .main {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.sidebar {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    float: left;
+    width: 33.33333333%;
+  }
+}
 body header div.splash {
   min-height: 160px;
   width: 100%;
@@ -6649,6 +6714,23 @@ aside.sidebar section.widget {
   border-bottom-style: solid;
   border-bottom-width: thin;
   padding-bottom: 10px;
+  /*
+		&.widget_nav_menu {
+			ul.menu {
+				.btn-group-vertical;
+				list-style: none;
+				li>a {
+					.btn;
+					.btn-primary;
+					ul {
+						.btn;
+						.btn-default;
+						//.dropdown-toggle;
+					}
+				}				
+			}
+		}
+*/
 }
 aside.sidebar section.widget:last-child {
   border-bottom: 0;
@@ -6850,6 +6932,9 @@ aside.sidebar section.widget div.connect dl.dl-horizontal > dt > img {
 aside.sidebar section.widget div.connect dl.dl-horizontal > dt i {
   color: #333;
 }
+header.navbar {
+  margin-bottom: 0;
+}
 header div.navbar-header {
   float: initial;
 }
@@ -6898,77 +6983,15 @@ body > footer div.social ul li {
   padding-left: 10px;
   padding-right: 10px;
 }
+main.main .page-header {
+  margin: 20px 0 10px;
+}
 @media (min-width: 768px) {
   div.connect dl.dl-horizontal > dt {
     width: 20px;
   }
   div.connect dl.dl-horizontal dd {
     margin-left: 40px;
-  }
-}
-.comment-list ol {
-  list-style: none;
-}
-.gallery-row {
-  padding: 10px 0;
-}
-.aligncenter {
-  display: block;
-  margin: 10px auto;
-}
-.alignleft,
-.alignright {
-  margin-bottom: 10px;
-}
-figure.alignnone {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-}
-@media (min-width: 768px) {
-  .alignleft {
-    float: left;
-    margin-right: 10px;
-  }
-  .alignright {
-    float: right;
-    margin-left: 10px;
-  }
-}
-.main {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .main {
-    float: left;
-    width: 100%;
-  }
-}
-.sidebar-primary .main {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .sidebar-primary .main {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.sidebar {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    float: left;
-    width: 33.33333333%;
   }
 }
 /*# sourceMappingURL=main.css.map */
