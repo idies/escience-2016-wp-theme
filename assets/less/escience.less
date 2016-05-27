@@ -131,13 +131,48 @@ header {
 		float: initial;
 		div.bookmark.navmenu {
 			.visible-xs-inline-block;
+			.visible-sm-inline-block;
 			box-sizing: border-box;
 			float:right;
 			padding:10px;
 			a {
-				color: #777777;
+				color: @brand-primary;
 				text-decoration: none;
 				background-color: transparent;
+			}
+		}
+	}
+}
+.left-vertical-nav {
+	.nav.navbar-nav {
+		margin-top: 20px;
+		li {
+			text-transform: uppercase;
+			width: 100%;
+			font-weight: bold;
+			a:hover {
+				background-color: 	@brand-primary-lightest;
+			}
+		}
+		li.active>a {
+			background-color: 	@brand-primary ;
+			color: 				white;			
+		}
+		li.dropdown ul.dropdown-menu {
+			padding-top: 0;
+			padding-bottom: 0;
+			text-indent: 2em;
+			li a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+		}
+		li.active.dropdown ul.dropdown-menu {
+			padding-top: 0;
+			padding-bottom: 0;
+			li.active a {
+				background-color: @brand-primary-lightest;
+				color: @brand-primary;
 			}
 		}
 	}
@@ -184,6 +219,12 @@ main.main {
 // -------------------------
 // MEDIA Queries
 // -------------------------
+@media (max-width: @screen-md-min) {
+	//header div.navbar-header div.bookmark.navmenu {
+    //display: inline-block !important;
+	//}
+}
+
 @media (min-width: @screen-sm-min) {
 	div.connect {
 		dl.dl-horizontal {

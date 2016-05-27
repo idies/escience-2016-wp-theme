@@ -6950,10 +6950,47 @@ header div.navbar-header div.bookmark.navmenu {
     display: inline-block !important;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  header div.navbar-header div.bookmark.navmenu {
+    display: inline-block !important;
+  }
+}
 header div.navbar-header div.bookmark.navmenu a {
-  color: #777777;
+  color: #1e138a;
   text-decoration: none;
   background-color: transparent;
+}
+.left-vertical-nav .nav.navbar-nav {
+  margin-top: 20px;
+}
+.left-vertical-nav .nav.navbar-nav li {
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold;
+}
+.left-vertical-nav .nav.navbar-nav li a:hover {
+  background-color: #d9d6f9;
+}
+.left-vertical-nav .nav.navbar-nav li.active > a {
+  background-color: #1e138a;
+  color: white;
+}
+.left-vertical-nav .nav.navbar-nav li.dropdown ul.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-indent: 2em;
+}
+.left-vertical-nav .nav.navbar-nav li.dropdown ul.dropdown-menu li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.left-vertical-nav .nav.navbar-nav li.active.dropdown ul.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.left-vertical-nav .nav.navbar-nav li.active.dropdown ul.dropdown-menu li.active a {
+  background-color: #d9d6f9;
+  color: #1e138a;
 }
 body > footer {
   background-color: #1e138a;
