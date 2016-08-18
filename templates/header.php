@@ -2,7 +2,7 @@
   <div class="container-fluid splash">  
   <div class="container-fluid logo"> <img class="alignright" src="<?php echo get_template_directory_uri() . "/assets/img/escience_logo_2106_hdr.png"; ?>" />
   </div>
-  </div>
+<div class="image-info"><i class="fa fa-info-circle" aria-hidden="true" title='"Baltimorepano" by Brlaw8 - Own work. Licensed under CC BY-SA 4.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Baltimorepano.jpg#/media/File:Baltimorepano.jpg'></i></div>  </div>
 <?php if ( !defined( 'SIDE_MENU' ) ) define( 'SIDE_MENU' , true ); ?>
 <?php if (SIDE_MENU) : ?>
   <div class="container">

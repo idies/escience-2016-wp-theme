@@ -6705,6 +6705,12 @@ body header div.splash {
 body header div.splash div.logo img {
   max-height: 180px;
 }
+body header div.splash .image-info {
+  position: absolute;
+  bottom: 52px;
+  left: 2px;
+  color: #c6af00;
+}
 body.home header div.splash {
   min-height: 320px;
 }
