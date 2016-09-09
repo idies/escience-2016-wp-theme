@@ -59,3 +59,48 @@ function roots_widgets_init() {
   ));
 }
 add_action('widgets_init', 'roots_widgets_init');
+
+/***************************************
+ * FILTERS
+ ***************************************/
+/**
+ * Add extra query variables
+ */
+function idies_add_query_vars_filter( $vars ){
+// For Registration Review Page
+  $vars[] = "reg-gf";
+  $vars[] = "reg-gw";
+  $vars[] = "reg-g1";
+  $vars[] = "reg-g2";
+  $vars[] = "reg-g3";
+  $vars[] = "reg-mf";
+  $vars[] = "reg-mw";
+  $vars[] = "reg-m1";
+  $vars[] = "reg-m2";
+  $vars[] = "reg-m3";
+  $vars[] = "reg-sf";
+  $vars[] = "reg-sw";
+  $vars[] = "reg-s1";
+  $vars[] = "reg-s2";
+  $vars[] = "reg-s3";
+  $vars[] = "reg-nf";
+  $vars[] = "reg-nw";
+  $vars[] = "reg-n1";
+  $vars[] = "reg-n2";
+  $vars[] = "reg-n3";
+  $vars[] = "reg-lf";
+  $vars[] = "reg-lw";
+  $vars[] = "reg-l1";
+  $vars[] = "reg-l2";
+  $vars[] = "reg-l3";
+  
+  $vars[] = "badge-fullname";
+  $vars[] = "badge-email";
+  $vars[] = "badge-name";
+  $vars[] = "badge-affil";
+
+  $vars[] = "DESCRIPTION";
+
+  return $vars;
+}
+add_filter( 'query_vars', 'idies_add_query_vars_filter' );

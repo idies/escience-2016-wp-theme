@@ -32,6 +32,16 @@ var Roots = {
     }
   },
   // About us page, note the change from about-us to about_us.
+  review: {
+    init: function() {
+		$().ready( function(){ 
+			//function getJsonFromUrl() { var result = {}; location.search.substr(1).split("&").forEach(function(part) { var item = part.split("="); result[item[0]] = decodeURIComponent(item[1]); }); return result; } param=getJsonFromUrl(); 
+			//if (typeof param['reg-gf'] !== 'undefined') jQuery("#reg-review").text("Yes"); 
+			//console.log(param);
+		});	
+	}
+  },
+  // About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
       // JavaScript to be fired on the about us page
