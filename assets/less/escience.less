@@ -220,6 +220,29 @@ main.main {
 	.page-header {
 		margin: 20px 0 10px;
 	}
+	// Collapse panel heading links
+	.panel .panel-heading {
+		h2, h3, h4 {
+			& >a {
+				text-decoration: none;
+				& :hover, &focus, &active {
+					text-decoration: none;
+				}
+				& .collapsed>i.opened {
+					display: none;
+				}
+				& :not(.collapsed)>i.closed {
+					display: none;
+				}
+			}
+			a.collapsed>i.opened {
+				display: none;
+			}
+			a:not(.collapsed)>i.closed {
+				display: none;
+			}
+		}
+	}
 }
 
 // -------------------------

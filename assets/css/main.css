@@ -7029,6 +7029,42 @@ body > footer div.social ul li {
 main.main .page-header {
   margin: 20px 0 10px;
 }
+main.main .panel .panel-heading h2 > a,
+main.main .panel .panel-heading h3 > a,
+main.main .panel .panel-heading h4 > a {
+  text-decoration: none;
+}
+main.main .panel .panel-heading h2 > a :hover,
+main.main .panel .panel-heading h3 > a :hover,
+main.main .panel .panel-heading h4 > a :hover,
+main.main .panel .panel-heading h2 > afocus,
+main.main .panel .panel-heading h3 > afocus,
+main.main .panel .panel-heading h4 > afocus,
+main.main .panel .panel-heading h2 > aactive,
+main.main .panel .panel-heading h3 > aactive,
+main.main .panel .panel-heading h4 > aactive {
+  text-decoration: none;
+}
+main.main .panel .panel-heading h2 > a .collapsed > i.opened,
+main.main .panel .panel-heading h3 > a .collapsed > i.opened,
+main.main .panel .panel-heading h4 > a .collapsed > i.opened {
+  display: none;
+}
+main.main .panel .panel-heading h2 > a :not(.collapsed) > i.closed,
+main.main .panel .panel-heading h3 > a :not(.collapsed) > i.closed,
+main.main .panel .panel-heading h4 > a :not(.collapsed) > i.closed {
+  display: none;
+}
+main.main .panel .panel-heading h2 a.collapsed > i.opened,
+main.main .panel .panel-heading h3 a.collapsed > i.opened,
+main.main .panel .panel-heading h4 a.collapsed > i.opened {
+  display: none;
+}
+main.main .panel .panel-heading h2 a:not(.collapsed) > i.closed,
+main.main .panel .panel-heading h3 a:not(.collapsed) > i.closed,
+main.main .panel .panel-heading h4 a:not(.collapsed) > i.closed {
+  display: none;
+}
 @media (min-width: 768px) {
   div.connect dl.dl-horizontal > dt {
     width: 20px;
