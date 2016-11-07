@@ -5,27 +5,27 @@
 <?php
 $reg_options = array(
 					  "reg-gf"=> "IEEE Non-Member Full Conference",
-					  "reg-gw"=> "IEEE Non-Member ERROR Workshop",
+					  "reg-gw"=> "IEEE Non-Member ECW Workshop",
 					  "reg-g1"=> "IEEE Non-Member Mon, Oct. 24 2016",
 					  "reg-g2"=> "IEEE Non-Member Tues, Oct. 25 2016",
 					  "reg-g3"=> "IEEE Non-Member Weds, Oct. 26 2016",
 					  "reg-mf"=> "IEEE Member Full Conference",
-					  "reg-mw"=> "IEEE Member ERROR Workshop",
+					  "reg-mw"=> "IEEE Member ECW Workshop",
 					  "reg-m1"=> "IEEE Member Mon, Oct. 24 2016",
 					  "reg-m2"=> "IEEE Member Tues, Oct. 25 2016",
 					  "reg-m3"=> "IEEE Member Weds, Oct. 26 2016",
 					  "reg-sf"=> "Student IEEE Member Full Conference",
-					  "reg-sw"=> "Student IEEE Member ERROR Workshop",
+					  "reg-sw"=> "Student IEEE Member ECW Workshop",
 					  "reg-s1"=> "Student IEEE Member Mon, Oct. 24 2016",
 					  "reg-s2"=> "Student IEEE Member Tues, Oct. 25 2016",
 					  "reg-s3"=> "Student IEEE Member Weds, Oct. 26 2016",
 					  "reg-nf"=> "Student Non-Member Full Conference",
-					  "reg-nw"=> "Student Non-Member ERROR Workshop",
+					  "reg-nw"=> "Student Non-Member ECW Workshop",
 					  "reg-n1"=> "Student Non-Member Mon, Oct. 24 2016",
 					  "reg-n2"=> "Student Non-Member Tues, Oct. 25 2016",
 					  "reg-n3"=> "Student Non-Member Weds, Oct. 26 2016",
 					  "reg-lf"=> "IEEE Life/Retired Full Conference",
-					  "reg-lw"=> "IEEE Life/Retired ERROR Workshop",
+					  "reg-lw"=> "IEEE Life/Retired ECW Workshop",
 					  "reg-l1"=> "IEEE Life/Retired Mon, Oct. 24 2016",
 					  "reg-l2"=> "IEEE Life/Retired Tues, Oct. 25 2016",
 					  "reg-l3"=> "IEEE Life/Retired Weds, Oct. 26 2016",
@@ -36,7 +36,9 @@ foreach ($reg_options as $this_option_key=>$this_option){
 }
 // Build description variable for confirmation
 $description = array_keys( $all_reg_options ) ;
+array_unshift( $description , get_query_var( "badge-email" ) ) ;
 array_unshift( $description , get_query_var( "badge-affil" ) ) ;
+array_unshift( $description , get_query_var( "badge-id" , "NA" ) ) ;
 array_unshift( $description , get_query_var( "badge-name" ) ) ;
 $description = implode( "::" , $description );
 htmlentities($description);
@@ -46,6 +48,8 @@ htmlentities($description);
 <div class="alert alert-info text-center">
 <p><big><strong><?php echo get_query_var( "badge-name" ) ;?></strong></big></p>
 <p><big><em><?php echo get_query_var( "badge-affil" ) ;?></em></big></p>
+<p><big><?php echo get_query_var( "badge-id" ) ;?></big></p>
+<p><big><?php echo get_query_var( "badge-email" ) ;?></big></p>
 </div>
 </div>
 </div>

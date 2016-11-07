@@ -98,6 +98,7 @@ function idies_add_query_vars_filter( $vars ){
   $vars[] = "badge-email";
   $vars[] = "badge-name";
   $vars[] = "badge-affil";
+  $vars[] = "badge-id";
 
   $vars[] = "DESCRIPTION";
 
